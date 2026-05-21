@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VOIDRUNNER</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:black;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 40px;
+      border-bottom:1px solid rgba(255,255,255,0.1);
+      position:sticky;
+      top:0;
+      backdrop-filter:blur(10px);
+      background:rgba(0,0,0,0.7);
+    }
+
+    header h1{
+      font-size:32px;
+      color:#a855f7;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#a855f7;
+    }
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:40px;
+      background:linear-gradient(to bottom, rgba(168,85,247,0.3), black);
+    }
+
+    .hero-content{
+      max-width:700px;
+    }
+
+    .hero h2{
+      font-size:70px;
+      margin-bottom:20px;
+      line-height:1.1;
+    }
+
+    .hero span{
+      color:#a855f7;
+    }
+
+    .hero p{
+      color:#aaa;
+      font-size:20px;
+      margin-bottom:30px;
+      line-height:1.6;
+    }
+
+    .buttons{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:16px 35px;
+      border:none;
+      border-radius:15px;
+      font-size:18px;
+      cursor:pointer;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    .btn-primary{
+      background:#a855f7;
+      color:white;
+    }
+
+    .btn-primary:hover{
+      background:#9333ea;
+    }
+
+    .btn-secondary{
+      background:transparent;
+      border:1px solid rgba(255,255,255,0.2);
+      color:white;
+    }
+
+    .btn-secondary:hover{
+      border-color:#a855f7;
+    }
+
+    .features{
+      padding:100px 40px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.1);
+      padding:30px;
+      border-radius:25px;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      background:rgba(255,255,255,0.08);
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      font-size:28px;
+    }
+
+    .card p{
+      color:#aaa;
+      line-height:1.6;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      border-top:1px solid rgba(255,255,255,0.1);
+      color:#777;
+    }
+
+    @media(max-width:700px){
+      .hero h2{
+        font-size:45px;
+      }
+
+      header{
+        flex-direction:column;
+        gap:15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>VOIDRUNNER</h1>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Features</a>
+    <a href="#">Download</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>RUN THE <span>FUTURE</span></h2>
+
+    <p>
+      Battle through neon cities, dodge enemy drones,
+      and survive the cyber world in VOIDRUNNER.
+    </p>
+
+    <div class="buttons">
+      <button class="btn btn-primary">Play Now</button>
+      <button class="btn btn-secondary">Watch Trailer</button>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+
+  <div class="card">
+    <h3>Open World</h3>
+    <p>
+      Explore massive futuristic cities and hidden underground zones.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Boss Battles</h3>
+    <p>
+      Fight giant cyber enemies with unique attack patterns.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Online Mode</h3>
+    <p>
+      Team up with friends and survive endless waves together.
+    </p>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 VOIDRUNNER. All rights reserved.
+</footer>
+
+</body>
+</html>
